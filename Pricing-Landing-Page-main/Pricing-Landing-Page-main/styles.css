@@ -1,0 +1,215 @@
+body {
+    background-color: #333; 
+    color: #ffffff; 
+    font-family: Roboto;
+    margin: 0;
+}
+
+header {
+    background-color: #333; 
+    padding: 20px;
+    text-align: left;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left-top-item {
+    flex-grow: 10;
+}
+
+.pricing-header {
+    font-size: 40px; 
+    font-weight: bold;
+    margin: 0;
+    color: #fff; 
+}
+
+.top-bar-item {
+    margin-right: 30px;
+    color: #fff;
+    font-size: 30px; 
+}
+
+.separator-line {
+    border: 1px solid #ccc; 
+    margin-top: 20px;
+
+}
+
+.plan-header {
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.plan-header h1 {
+    font-size: 50px; 
+    color: #6db0c5; 
+}
+
+footer {
+    background-color: #333; 
+    color: #6db0c5; 
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+.plan-header p {
+    font-size: 28px;
+    margin-bottom: 50px; 
+    text-align: center; 
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+.plan-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+}
+
+.plan-box {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px 20px;
+    border: 2px solid #6db0c5;
+    text-align: center;
+    position: relative;
+    border: 2px solid #6db0c5; 
+    border-radius: 10px;
+    width: 15%; 
+}
+
+.plan-box h3 {
+    font-size: 40px;
+    
+    font-weight: 400;
+    position: relative; 
+    margin: 10px 10px; 
+    text-align: center; 
+}
+
+.plan-box h3::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #6db0c5; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.plan-box p.price {
+    font-size: calc(1.375rem + 1.5vw);; 
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+.plan-box p {
+    font-size: 14px;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.plan-box p.feature {
+    font-size: 24px; 
+    margin: 5px 0;
+    
+}
+
+.plan-box button.signup-button {
+    margin-top: 20px;
+    padding: 8px 15px; 
+    font-size: 26px; 
+    color: #6db0c5;
+    background-color: transparent; 
+    border: 2px solid #6db0c5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.plan-box button.signup-button:hover {
+    background-color: #6db0c5;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-top-item {
+    margin-bottom: 10px;
+  }
+
+  .top-bar-item {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .plan-header {
+    margin-top: 30px;
+  }
+
+  .plan-header h1 {
+    font-size: 2rem;
+  }
+
+  .plan-header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .plan-boxes {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  .plan-box {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .plan-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .plan-box h3::after {
+    height: 1px;
+  }
+
+  .plan-box p.price {
+    font-size: 1.2rem;
+  }
+
+  .plan-box p {
+    font-size: 1rem;
+  }
+
+  .plan-box button.signup-button {
+    font-size: 1.2rem;
+  }
+}
